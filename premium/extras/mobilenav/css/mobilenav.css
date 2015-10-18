@@ -114,3 +114,14 @@
 a.mobilenav {
   display: none;
 }
+
+#footer-widgets .widget { width: 25%; }
+	@media screen and (max-width: 640px) {
+		#footer-widgets .widget { width: auto; float: none; }
+	}
+
+.so-mobilenav-mobile + * { display: none; }
+	@media screen and (max-width: 480px) {
+		.so-mobilenav-mobile + * { display: block; } 
+		.so-mobilenav-standard + * { display: none; }
+	}
